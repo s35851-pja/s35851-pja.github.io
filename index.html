@@ -1,11 +1,229 @@
 <!DOCTYPE html>
 <html lang="pl">
+<head> <!DOCTYPE html>
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Warszawa - Nagłówek</title>
+    
+    <!-- Import eleganckiej czcionki Cormorant Garamond (z klasą) oraz Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,400&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff; /* Białe tło reszty strony */
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        /* Styl samego nagłówka strony */
+        .naglowek-strony {
+            background-color: #06261d; /* Głęboka, elegancka zieleń butelkowa */
+            height: 300px; /* Wysokość nagłówka */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15); /* Delikatny cień pod nagłówkiem */
+            border-bottom: 3px solid #d4af37; /* Złoty pasek na dole nagłówka */
+        }
+
+        /* Główny piękny napis */
+        .napis-warszawa {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 5.5rem;
+            font-weight: 500;
+            color: #d4af37; /* Elegancki złoty kolor */
+            margin: 0;
+            letter-spacing: 4px;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+
+        /* Mały podnapis dodający smaczku */
+        .podnapis {
+            color: #ffffff;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 8px;
+            margin-top: 5px;
+            opacity: 0.8;
+        }
+
+        /* Responsywność dla smartfonów */
+        @media (max-width: 768px) {
+            .naglowek-strony {
+                height: 200px;
+            }
+            .napis-warszawa {
+                font-size: 3.5rem;
+            }
+            .podnapis {
+                font-size: 0.7rem;
+                letter-spacing: 5px;
+            }
+        }
+    </style>
 </head>
 <body>
-    test 
+
+    
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warszawa - Strona Główna</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9; /* Delikatne, jasne tło strony */
+            font-family: 'Montserrat', sans-serif;
+            color: #333333;
+        }
+
+        /* Styl nagłówka */
+        .naglowek-strony {
+            background-color: #06261d; /* Głęboka zieleń */
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            border-bottom: 3px solid #d4af37; /* Złoty pasek */
+        }
+
+        .napis-warszawa {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 5.5rem;
+            font-weight: 500;
+            color: #d4af37; /* Złoty napis */
+            margin: 0;
+            letter-spacing: 4px;
+        }
+
+        /* Menu nawigacyjne */
+        nav {
+            margin-top: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 400;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #d4af37;
+        }
+        nav a.aktywny {
+            color: #d4af37;
+            border-bottom: 1px solid #d4af37;
+            padding-bottom: 3px;
+        }
+
+        /* Styl kontenera na treść strony */
+        .tresc-strony {
+            max-width: 800px; /* Ograniczenie szerokości tekstu */
+            margin: 40px auto 80px auto; /* Odstęp od dołu na stopkę */
+            padding: 0 20px;
+        }
+
+        /* STYLIZACJA ZDJĘCIA */
+        .foto-warszawa {
+            width: 100%; /* Zdjęcie dopasuje się do szerokości strony */
+            max-height: 450px; /* Żeby zdjęcie nie było za wysokie */
+            object-fit: cover; /* Ładnie przytnie zdjęcie bez rozciągania */
+            border-radius: 8px; /* Zaokrąglone rogi zdjęcia */
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Delikatny cień pod zdjęciem */
+            margin-bottom: 30px; /* Odstęp od tekstu na dole */
+        }
+
+        h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.5rem;
+            color: #06261d;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            text-align: justify; /* Wyrównanie tekstu do obu marginesów */
+            margin-bottom: 20px;
+        }
+
+        /* Pozycjonowanie stopki w prawym dolnym rogu */
+        .stopka-rog {
+            position: fixed; /* Stopka będzie zawsze widoczna w tym samym miejscu ekranu */
+            bottom: 15px;    /* 15 pikseli odległości od dolnej krawędzi */
+            right: 20px;     /* 20 pikseli odległości od prawej krawędzi */
+            font-size: 0.85rem; /* Mniejsza, dyskretna czcionka */
+            color: #666666;  /* Szary kolor tekstu */
+            font-weight: 400;
+            letter-spacing: 1px;
+            z-index: 1000;   /* Gwarantuje, że stopka będzie zawsze na wierzchu */
+            background-color: rgba(249, 249, 249, 0.8); /* Półprzezroczyste tło */
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+
+        /* Responsywność dla telefonów */
+        @media (max-width: 768px) {
+            .naglowek-strony { height: 180px; }
+            .napis-warszawa { font-size: 3.5rem; }
+            h2 { font-size: 1.8rem; }
+            p { font-size: 1rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="naglowek-strony">
+        <h1 class="napis-warszawa">Warszawa</h1>
+        <nav>
+            <a href="index.html" class="aktywny">Strona Główna</a>
+            <a href="zabytki.html">Zabytki</a>
+        </nav>
+    </header>
+
+    <main class="tresc-strony">
+        
+        <img src="warszawa.jpg" alt="Zdjęcie Warszawy" class="foto-warszawa">
+
+        <h2>Serce i stolica Polski</h2>
+        <p>
+            Warszawa, położona nad najdłuższą polską rzeką – Wisłą, jest oficjalną stolicą Polski od 1596 roku, kiedy to król Zygmunt III Waza podjął decyzję o przeniesieniu tu dworu królewskiego z Krakowa (choć formalnie zatwierdziła to dopiero Konstytucja 3 Maja w 1791 roku).
+        </p>
+        <p>
+            Początki samego miasta sięgają przełomu XIII i XIV wieku, kiedy to powstał gród książąt mazowieckich, a Warszawa otrzymała prawa miejskie.
+        </p>
+        <p>
+            Dziś to największe miasto w kraju, liczące blisko 2 miliony mieszkańców. Jest nie tylko politycznym centrum państwa, gdzie znajdują się Sejm, Prezydent i najważniejsze urzędy, ale także głównym ośrodkiem gospodarczym, kulturalnym i naukowym w tej części Europy. Choć w czasie II wojny światowej miasto zostało niemal całkowicie zniszczone, narodziło się na nowo, zyskując miano "miasta-feniksa".
+        </p>
+
+    </main>
+
+    <footer class="stopka-rog">
+        Zosia Sobków s35851
+    </footer>
+
+</body>
+</html>
 </body>
 </html>

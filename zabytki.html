@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warszawa - Zabytki</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;1,400&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            font-family: 'Montserrat', sans-serif;
+            color: #333333;
+        }
+
+        /* Styl nagłówka */
+        .naglowek-strony {
+            background-color: #06261d;
+            height: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            border-bottom: 3px solid #d4af37;
+        }
+
+        .napis-warszawa {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 5.5rem;
+            font-weight: 500;
+            color: #d4af37;
+            margin: 0;
+            letter-spacing: 4px;
+        }
+
+        /* Menu nawigacyjne */
+        nav {
+            margin-top: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 400;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #d4af37;
+        }
+        nav a.aktywny {
+            color: #d4af37;
+            border-bottom: 1px solid #d4af37;
+            padding-bottom: 3px;
+        }
+
+        /* Styl kontenera na treść strony */
+        .tresc-strony {
+            max-width: 800px;
+            margin: 40px auto 80px auto;
+            padding: 0 20px;
+        }
+
+        h2 {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.5rem;
+            color: #06261d;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* Styl listy zabytków */
+        .lista-zabytkow {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .lista-zabytkow li {
+            background-color: #ffffff;
+            margin-bottom: 15px;
+            padding: 20px;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            border-left: 4px solid #d4af37; /* Złoty pasek dekoracyjny z boku */
+            text-align: left;
+        }
+
+        .lista-zabytkow strong {
+            color: #06261d;
+            font-size: 1.2rem;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        /* Pozycjonowanie stopki w prawym dolnym rogu */
+        .stopka-rog {
+            position: fixed;
+            bottom: 15px;
+            right: 20px;
+            font-size: 0.85rem;
+            color: #666666;
+            font-weight: 400;
+            letter-spacing: 1px;
+            z-index: 1000;
+            background-color: rgba(249, 249, 249, 0.8);
+            padding: 4px 8px;
+            border-radius: 4px;
+        }
+
+        /* Responsywność dla telefonów */
+        @media (max-width: 768px) {
+            .naglowek-strony { height: 180px; }
+            .napis-warszawa { font-size: 3.5rem; }
+            h2 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="naglowek-strony">
+        <h1 class="napis-warszawa">Warszawa</h1>
+        <nav>
+            <a href="index.html">Strona Główna</a>
+            <a href="zabytki.html" class="aktywny">Zabytki</a>
+        </nav>
+    </header>
+
+    <main class="tresc-strony">
+        
+        <h2>Najważniejsze Zabytki</h2>
+        <p>Warszawa kryje w sobie mnóstwo niesamowitych miejsc. Oto najważniejsze z nich, które musisz zobaczyć:</p>
+        
+        <ul class="lista-zabytkow">
+            <li>
+                <strong>Stare Miasto</strong>
+                Z Zamkiem Królewskim i Kolumną Zygmunta na czele. Zostało niemal całkowicie zniszczone podczas II wojny światowej, a następnie pieczołowicie odbudowane, dzięki czemu trafiło na listę światowego dziedzictwa UNESCO.
+            </li>
+            <li>
+                <strong>Łazienki Królewskie</strong>
+                Przepiękny i ogromny zespół pałacowo-ogrodowy z Pałacem na Wyspie, ufundowany w XVIII wieku przez króla Stanisława Augusta Poniatowskiego.
+            </li>
+            <li>
+                <strong>Pałac Kultury i Nauki</strong>
+                Wybudowany w 1955 roku jako "dar narodu radzieckiego". Przez dekady najwyższy i najbardziej rozpoznawalny symbol stolicy.
+            </li>
+            <li>
+                <strong>Pałac w Wilanowie</strong>
+                Cudowny barokowy pałac wzniesiony dla króla Jana III Sobieskiego. Przetrwał czasy zaborów i wojen, stanowiąc jeden z najcenniejszych zabytków polskiej kultury.
+            </li>
+        </ul>
+
+    </main>
+
+    <footer class="stopka-rog">
+        Zosia Sobków s35851
+    </footer>
+
+</body>
+</html>
+</body>
+</html>
